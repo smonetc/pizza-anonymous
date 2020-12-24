@@ -15,7 +15,7 @@ class LandingPage extends React.Component{
             </div>
             <div className="landingpage-buttons">
                <button><Link to="/create" className="links">Create Your Pizza</Link></button> 
-               <button><Link to="/pizza-creation" className="links">Veiw Creations</Link></button>
+               <button><Link to="/pizza-creation" className="links">View Creations</Link></button>
             </div>
          </div>
       )
