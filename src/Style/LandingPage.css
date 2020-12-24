@@ -1,0 +1,32 @@
+
+h2{
+   margin-top: 3em;
+}
+
+p{
+   margin: 1em;
+}
+
+.links{
+   text-decoration: none;
+   color: black;
+}
+
+.landingpage{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.landingpage-image{
+   margin-top: 10%;
+}
+.landingpage-buttons{
+   margin-top: 10% !important;
+}
+button{
+   display: block;
+   width: 150px;
+   margin-top: 7%;
+   text-align: center;
+}

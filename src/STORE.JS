@@ -138,7 +138,7 @@ export default {
          "type":"Sprinkles"
       }
    ],
-   "your-pizza": [
+   "yourpizza": [
      {
       "id": 1,
       "crust": "Garlic",

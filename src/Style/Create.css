@@ -1,0 +1,39 @@
+
+   .shareform{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   #crust_name{
+      margin-bottom: 1em;
+   }
+   
+   #sauce_name{
+      margin-bottom: 1em;
+   }
+
+   #cheese_name{
+      margin-bottom: 1em;
+   }
+
+   #meat_name{
+      margin-bottom: 1em;
+   }
+
+   #toppings_name{
+      margin-bottom: 1em;
+   }
+
+   button{
+      margin: 2em 0;
+   }
+
+   .meat{
+      margin-top: 1em !important;
+   }
+
+   .top{
+      margin-top: 1em !important;
+   }
