@@ -7,7 +7,7 @@ class LandingPage extends React.Component{
       return(
          <div className="landingpage">
             <div>
-               <h2>Welcome to Anonymous</h2>
+               <h2>Welcome to Pizza Anonymous</h2>
                <p>Here you can share your favorite pizza varations and see other creations from fellow pizza lovers!</p>
             </div>
             <div className="landingpage-image">
