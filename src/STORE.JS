@@ -86,6 +86,10 @@ export default {
       {
          "id": 6,
          "type":"Ham"
+      },
+      {
+         "id": 7,
+         "type":"None"
       }
    ],
    "toppings":[
@@ -107,7 +111,7 @@ export default {
       },
       {
          "id":5,
-         "type": "Pineapples"
+         "type": "Mushrooms"
       },
       {
          "id": 6,
@@ -119,7 +123,7 @@ export default {
       },
       {
          "id": 8,
-         "type":"Mushrooms"
+         "type":"Pineapples"
       },
       {
          "id": 9,
@@ -136,6 +140,10 @@ export default {
       {
          "id": 12,
          "type":"Sprinkles"
+      },
+      {
+         "id": 13,
+         "type":"None"
       }
    ],
    "yourpizza": [
