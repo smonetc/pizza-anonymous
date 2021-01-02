@@ -18,6 +18,14 @@ export default {
       },
       {
          "id": 5,
+         "type":"Gluten Free"
+      },
+      {
+         "id": 6,
+         "type":"Cauliflower"
+      },
+      {
+         "id": 7,
          "type":"Cookie"
       }
    ],
@@ -44,6 +52,26 @@ export default {
       },
       {
          "id": 6,
+         "type":"Pesto"
+      },
+      {
+         "id": 7,
+         "type":"Hummus"
+      },
+      {
+         "id": 8,
+         "type": "White Garlic Sauce"
+      },
+      {
+         "id": 9,
+         "type": "Garlic Ranch Sauce"
+      },
+      {
+         "id": 10,
+         "type": "BBQ Sauce"
+      },
+      {
+         "id": 11,
          "type":"Chocolate"
       }
 
@@ -55,7 +83,7 @@ export default {
       },
       {
          "id": 2,
-         "type":"Cheese"  
+         "type":"Regular Cheese"  
       },
       {
          "id": 3,

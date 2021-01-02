@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Style/Pizzas.css'
-import YPContext from '../YPContext'
+
 
 class Pizzas extends React.Component {
    static defaultProps = {
@@ -8,21 +8,20 @@ class Pizzas extends React.Component {
         params: {}
       }
   }
-
-  static contextType = YPContext
+   
 
    render(){
       const {id,crust,sauce,cheese,meat,toppings,category,username} = this.props
       return(
          <>
             <h4>Pizza Choice: {id} </h4>
-            <p>Category: {category}</p>
-            <p>Crust: {crust}</p>
-            <p>Sauce: {sauce}</p>
-            <p>Cheese: {cheese} </p>
-            <p>Meat(s): {meat}</p>
-            <p>Topping(s): {toppings}</p>
-            <p>Username: {username}</p>
+            <p className="pizza-p">Category: {category}</p>
+            <p className="pizza-p">Crust: {crust}</p>
+            <p className="pizza-p">Sauce: {sauce}</p>
+            <p className="pizza-p">Cheese: {cheese} </p>
+            <p className="pizza-p">Meat(s): {meat}</p>
+            <p className="pizza-p">Topping(s): {toppings}</p>
+            <p className="pizza-p">Username: {username}</p>
          </>
       )
    }

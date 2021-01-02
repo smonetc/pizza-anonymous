@@ -6,9 +6,8 @@ import LandingPage from './Components/LandingPage';
 import PizzaCreation from './Components/PizzaCreation';
 import Create from './Components/Create';
 import YPContext from './YPContext';
-// import STORE from './STORE';
-// import Footer from './Components/Footer'
 import config from './config'
+
 
 class App extends React.Component{
 
@@ -73,7 +72,9 @@ class App extends React.Component{
       <YPContext.Provider value={contextValue}>
         <BrowserRouter>
           <div className="App">
-            <Navbar />
+            <nav>
+              <Navbar />
+            </nav>
             <main>
               <Switch>
                 <Route path="/" exact={true} component={() => <LandingPage />}/>
@@ -81,9 +82,6 @@ class App extends React.Component{
                 <Route path="/create"  component={() => <Create />}/>
               </Switch>
             </main>
-            {/* <Footer>
-              <Footer />
-            </Footer> */}
           </div>
         </BrowserRouter>
       </YPContext.Provider>

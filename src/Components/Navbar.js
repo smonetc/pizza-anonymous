@@ -3,25 +3,27 @@ import {Link} from 'react-router-dom'
 import '../Style/Navbar.css'
 
 class Navbar extends React.Component{
+
+   state = { clicked: false }
+
+   handleClick = () => {
+       this.setState({ clicked: !this.state.clicked })
+   }
+
    render(){
       return(
-         <div className="navbar">
-           <div className="logo-nav">
-              <div className="logo-container">
-               <h1><Link to="/" className="links">Pizza Anonymous</Link></h1>
-              </div>
-              <ul>
-                 <li>
-                    <Link to="/create" className="links">Create</Link>
-                    <i className="fas fa-pen"></i>
-                 </li>
-                 <li>
-                    <Link to="/pizza-creation" className="links">View</Link>
-                    <i className="fas fa-pizza-slice"></i>
-                 </li>
-              </ul>
-           </div>
+         <nav className="NavbarItems">
+         <h1 className="navbar-logo"><Link to="/" className="logo">Pizza-AAA</Link></h1>
+         <div className="menu-icon" onClick={this.handleClick}>
+             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
          </div>
+         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+            <li> <Link className="nav-links" to='/create'>Create <i className="fas fa-pencil-alt"></i></Link></li>
+            <li> <Link className="nav-links" to='/pizza-creation'>View <i className="fas fa-pizza-slice"></i></Link></li>
+            <li> <a href='https://github.com/smonetc/pizza-anonymous' target='_blank' rel="noreferrer" className="nav-links"><i className="fab fa-github-alt" /></a></li>
+            <li><a href='https://twitter.com/helloitsmonet' target='_blank' className='twitter nav-links' rel='noreferrer'><i className="fab fa-twitter" /></a></li>
+         </ul>
+     </nav>
       )
    }
 }

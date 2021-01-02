@@ -118,26 +118,26 @@ class Create extends React.Component{
      const {category = []} = this.context
      return(
          <YourPizzaError>
-            <h2>SHARE THE WAY YOU LIKE YOUR PIZZA!</h2>
+            <h2 className="share">SHARE THE WAY YOU LIKE YOUR PIZZA!</h2>
             <div className='post-form'>
                <form onSubmit={this.handleSubmit}>  
                   <label htmlFor='category_id'> * Category</label>
-                  <select
-                  name='category_id'
-                  id="category_id"
-                  required
-                  >
-                  <option value=''>Choose One</option>
-                  {category.map(ca => 
-                     <option key={ca.id} 
-                     value={ca.id}
+                     <select
+                     name='category_id'
+                     id="category_id"
+                     required
                      >
-                     {ca.content}
-                     </option>
-                     )}
-                  </select>
+                     <option value=''>Choose One</option>
+                     {category.map(ca => 
+                        <option key={ca.id} 
+                        value={ca.id}
+                        >
+                        {ca.content}
+                        </option>
+                        )}
+                     </select>
                   <br />
-                  <label htmlFor='crust'> * Crust</label>
+                  <label htmlFor='crust'> * Crust</label> 
                   <select
                   name='crust'
                   id="crust"
@@ -169,7 +169,7 @@ class Create extends React.Component{
                      )}
                   </select>
                   <br />
-                  <label htmlFor='sauce'> * Sauce</label>
+                  <label htmlFor='sauce'> * Sauce</label> 
                   <select
                   name='sauce'
                   id="sauce"
@@ -186,6 +186,7 @@ class Create extends React.Component{
                   </select>
                   <br />
                   <label htmlFor='meats'> * Meats </label>
+                  <br />
                   <textarea 
                   name='meats'
                   id='meats'
@@ -195,6 +196,7 @@ class Create extends React.Component{
                   />
                   <br />
                   <label htmlFor='toppings'> * Toppings </label>
+                  <br />
                   <textarea 
                   name='toppings'
                   id='toppings'
@@ -204,6 +206,7 @@ class Create extends React.Component{
                   />
                   <br />
                   <label> * Your Name</label>
+                  <br />
                   <input 
                   type='text'
                   name='username'
@@ -213,10 +216,10 @@ class Create extends React.Component{
                   required
                   />
                   <br />
-                  <button type='submit'>
+                  {this.state.errorMessage && <ValidationError message={this.state.errorMessage}/>}
+                  <button type='submit' className="create-btn">
                      Submit
                   </button>
-                  {this.state.errorMessage && <ValidationError message={this.state.errorMessage}/>}
                </form>
             </div>
          </YourPizzaError>

@@ -18,11 +18,11 @@ class PizzaCreation extends React.Component{
       let yourpizza = this.context.yourpizza
       return(
          <div>
-            <h4>Pizza Creations Page: </h4>
+            <h2 className="heading">Pizza Creations Page: </h2>
             <div  className="pizza-container">
-               <ul>
+               {/* <div className="grid"> */}
                   {yourpizza.map(pizza =>
-                     <li key={pizza.id} className="pizzaboxes">
+                     <div key={pizza.id} className="pizzaboxes">
                         <Pizzas 
                            id={pizza.id}
                            category={pizza.content}
@@ -33,9 +33,9 @@ class PizzaCreation extends React.Component{
                            toppings={pizza.toppings}
                            username={pizza.username}
                         />
-                     </li>
+                     </div>
                   )}
-               </ul>
+               {/* </div> */}
             </div>
          </div>
       )

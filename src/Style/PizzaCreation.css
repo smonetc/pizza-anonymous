@@ -2,26 +2,46 @@
    margin: 0 auto;
 }
 
-h4{
+.heading{
    margin-top: 3em;
+   font-size: 2em;
+   font-weight: bold;
+   color:#e28413;
 }
 
-ul,li{
-   list-style: none;
-   padding: 0;
+.pizza-container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 2em;
 }
 
+.pizzaboxes{
+   border: 10px dotted black;
+   width: 300px;
+   height: auto;
+   max-width: 60vw;
+   max-height: 60vh;
+   margin-top: 3em !important;
+   padding: 1em !important;
+}
 
+.pizzaboxes:hover{
+   border: 10px dotted #e28413;
+}
+
+@media screen and (min-width: 800px) {
    .pizza-container{
-      display: flex;
-      justify-content: center;
-      margin-bottom: 2em;
+      display: grid;
+      grid-template-columns: auto auto;
    }
 
    .pizzaboxes{
-      border: 1px solid black;
+      padding: 2em 2em 0 2em;
+      width: 400px;
+      height: 400px;
       max-width: 60vw;
       max-height: 60vh;
-      margin-top: 3em !important;
-      padding: 0 2em 2em 2em;
+      margin: .4em;
    }
+}
