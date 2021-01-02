@@ -12,14 +12,14 @@
 
 ## Create Page (posting)
 
-![Pizza - AAA](https://github.com/smonetc/pizza-anonymous/blob/master/src/images/Screen%20Shot%202021-01-02%20at%203.56.46%20AM.jpeg)
-
+![Pizza - AAA](https://github.com/smonetc/pizza-anonymous/blob/master/src/images/Screen%20Shot%202021-01-02%20at%203.56.42%20AM.jpeg)
 
 #### Here you're able to include all information about your pizza creation and submit it. 
 
 ## Creations Page 
 
-![Pizza - AAA](https://github.com/smonetc/pizza-anonymous/blob/master/src/images/Screen%20Shot%202021-01-02%20at%203.56.42%20AM.jpeg)
+![Pizza - AAA](https://github.com/smonetc/pizza-anonymous/blob/master/src/images/Screen%20Shot%202021-01-02%20at%203.56.46%20AM.jpeg)
+
 
 #### Here you're able to view all pizza creations posted on the website.
 
