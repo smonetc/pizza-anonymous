@@ -20,7 +20,6 @@ class PizzaCreation extends React.Component{
          <div>
             <h2 className="heading">Pizza Creations Page: </h2>
             <div  className="pizza-container">
-               {/* <div className="grid"> */}
                   {yourpizza.map(pizza =>
                      <div key={pizza.id} className="pizzaboxes">
                         <Pizzas 
@@ -35,7 +34,6 @@ class PizzaCreation extends React.Component{
                         />
                      </div>
                   )}
-               {/* </div> */}
             </div>
          </div>
       )

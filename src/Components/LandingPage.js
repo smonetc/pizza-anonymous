@@ -14,11 +14,11 @@ class LandingPage extends React.Component{
                <h2>Welcome to Pizza Anonymous</h2>
                <p>So everyone loves pizza, right? I mean if they’re cool then they do. 
                   Here on Pizza-AAA we’re here to share our pizza creations with the 
-                  pizza loving world! We’ll provide the crust, cheese and sauce options and 
-                  you provide the different meats and toppings that you order on your pizza. 
+                  pizza loving world! We’ll provide the crust, cheese, and sauce options. 
+                  You provide the different meats and toppings that you order on your pizza. 
                   Sweet or savory we’re here for ALL the pizza vibezzz. </p>
                <div className="landingpage-buttons">
-                  <button className="btn"><a href="https://pizza-anonymous-pgwl39m3c.vercel.app/create" className="links">Create Pizza</a></button> 
+                  <button className="btn"><a href="https://pizza-anonymous.smonetc.vercel.app/create" className="links">Create Pizza</a></button> 
                </div>
             </div>
          </div>
